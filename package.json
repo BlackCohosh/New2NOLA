@@ -1,0 +1,26 @@
+{
+  "name": "minicapstone",
+  "version": "1.0.0",
+  "description": "Interactive database for food, drink, and activities for New Orleans newbies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackCohosh/New2Nola.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackCohosh/New2Nola/issues"
+  },
+  "homepage": "https://github.com/BlackCohosh/New2Nola#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json": "^11.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
