@@ -1,35 +1,25 @@
-const eat = require('../../db/eat.json');
 const drink = require('../../db/drink.json');
+const eat = require('../../db/eat.json');
 const beMerry = require('../../db/beMerry.json');
-const Eat = require('../../models/eat.js');
 const Drink = require('../../models/drink.js');
+const Eat = require('../../models/eat.js');
 const BeMerry = require('../../models/beMerry.js');
 
 module.exports = {
-    getEat: (req, res) => {
-        let index = Math.floor(Math.random() * Eat.all.length);
-        let eat = Eat.all[index];
-        res.status(200).send(eat.text);
-    },
     getDrink: (req, res) => {
         let index = Math.floor(Math.random() * Drink.all.length);
         let drink = Drink.all[index];
         res.status(200).send(drink.text);
     },
+    getEat: (req, res) => {
+        let index = Math.floor(Math.random() * Eat.all.length);
+        let eat = Eat.all[index];
+        res.status(200).send(eat.text);
+    },
     getBeMerry: (req, res) => {
-        let index = Math.floor(Math.random() * beMerry.all.length);
+        let index = Math.floor(Math.random() * BeMerry.all.length);
         let beMerry = BeMerry.all[index];
         res.status(200).send(beMerry.text);
-    },
-    genEat: (req, res) => {
-        if (Eat.all.length === 0) {
-            eat.forEach(eat => new Eat(eat.text));
-        }
-        if (eat) {
-            res.status(200).send(Eat.all);
-        } else {
-            res.status(500).send("Error generating eat.")
-        }
     },
     genDrink: (req, res) => {
         if (Drink.all.length === 0) {
@@ -38,7 +28,17 @@ module.exports = {
         if (drink) {
             res.status(200).send(Drink.all);
         } else {
-            res.status(500).send("Error generating drink.")
+            res.status(500).send("Error generating Drink.")
+        }
+    },
+    genEat: (req, res) => {
+        if (Eat.all.length === 0) {
+            eat.forEach(eat => new Eat(eat.text));
+        }
+        if (eat) {
+            res.status(200).send(Eat.all);
+        } else {
+            res.status(500).send("Error generating Eat.")
         }
     },
     genBeMerry: (req, res) => {
@@ -48,7 +48,7 @@ module.exports = {
         if (beMerry) {
             res.status(200).send(BeMerry.all);
         } else {
-            res.status(500).send("Error generating beMerry.")
+            res.status(500).send("Error generating Be Merry.")
         }
     },
     createEat: (req, res) => {

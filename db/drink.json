@@ -1,17 +1,22 @@
 [
     {
-        "text": "Seafood Sally's -> daily 4-6pm -$6 cocktails, $5 wine"
+        "text": "Seafood Sally's -> daily 4-6pm -$6 cocktails, $5 wine",
+        "day": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     {
-        "text": "Boucherie -> Tues-Sat 5-7pm - $1 off wine, $5 draft, $7 sazerac"
+        "text": "Boucherie -> Tues-Sat 5-7pm - $1 off wine, $5 draft, $7 sazerac",
+        "day": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     {
-        "text": "Vals -> daily 4-6pm - $6 margarita, $5 modelo+tapito shot"
+        "text": "Vals -> daily 4-6pm - $6 margarita, $5 modelo+tapito shot",
+        "day": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     {
-        "text": "Cho Thai -> daily 4-6pm - $5 cocktail, $4 wine, $10 sake"
+        "text": "Cho Thai -> daily 4-6pm - $5 cocktail, $4 wine, $10 sake",
+        "day": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     {
-        "text": "Maypop -> weekdays 4-6pm -> $6 wine, cocktails, drafts"
+        "text": "Maypop -> weekdays 4-6pm -> $6 wine, cocktails, drafts",
+        "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     }
 ]

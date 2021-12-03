@@ -1,11 +1,14 @@
 [
     {
-        "text": "Seafood Sally's -> 4-6pm daily - $1 oysters, $5 bar snacks "
+        "text": "Seafood Sally's -> 4-6pm daily - $1 oysters, $5 bar snacks ",
+        "day": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] 
     },
     {
-        "text": "Boucherie -> Tues-Sat 5-7pm - $5 boudin balls, $4 fries, $8 blackened shrimp grit cake."
+        "text": "Boucherie -> Tues-Sat 5-7pm - $5 boudin balls, $4 fries, $8 blackened shrimp grit cake.",
+        "day": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     {
-        "text": "Maypop -> weekdays 4-6pm - $7 hot wings, $3 steam buns"
+        "text": "Maypop -> weekdays 4-6pm - $7 hot wings, $3 steam buns",
+        "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     }
 ]

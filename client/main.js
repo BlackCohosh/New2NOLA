@@ -343,11 +343,13 @@ document.addEventListener("DOMContentLoaded", generateEat);
 newFormEat.addEventListener("submit", newEat);
 delFormEat.addEventListener("submit", deleteEat);
 upFormEat.addEventListener("submit", updateEat);
+
 document.getElementById('drink').addEventListener("click", fetchDrink);
 document.addEventListener("DOMContentLoaded", generateDrink);
 newFormDrink.addEventListener("submit", newDrink);
 delFormDrink.addEventListener("submit", deleteDrink);
 upFormDrink.addEventListener("submit", updateDrink);
+
 document.getElementById('beMerry').addEventListener("click", fetchBeMerry);
 document.addEventListener("DOMContentLoaded", generateBeMerry);
 newFormBeMerry.addEventListener("submit", newBeMerry);

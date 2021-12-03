@@ -1,20 +1,26 @@
 [
     {
-        "text": "Rock'n Bowl -> Mondays - Free entry to swing dancing"
+        "text": "Rock'n Bowl -> Mondays - Free entry to swing dancing",
+        "day": "Monday"
     },
     {
-        "text": "Ogden Museum of Southern Art -> 1st Friday monthly - Free First Fridays for Students at the Ogden"
+        "text": "Ogden Museum of Southern Art -> 1st Friday monthly - Free First Fridays for Students at the Ogden",
+        "day": "Friday"
     },
     {
-        "text": "Maypop Herb Shop -> Thursdays 6-7:15pm - Free ear acupuncture by NADA Nola Collective"
+        "text": "Maypop Herb Shop -> Thursdays 6-7:15pm - Free ear acupuncture by NADA Nola Collective",
+        "day": "Thursday"
     },
     {
-        "text": "SpeakEasy Yoga -> Weekly - Donation based yoga"
+        "text": "SpeakEasy Yoga -> Weekly - Donation based yoga",
+        "day": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     },
     {
-        "text": "New Orleans Boulder Lounge -> First Saturday monthly 7-9:30pm - OutClimb"
+        "text": "New Orleans Boulder Lounge -> First Saturday monthly 7-9:30pm - OutClimb",
+        "day": "Saturday"
     },
     {
-        "text": "New Orleans Boulder Lounge -> Second Saturday monthly 7-9:30pm - Climbers of Color"
+        "text": "New Orleans Boulder Lounge -> Second Saturday monthly 7-9:30pm - Climbers of Color",
+        "day": "Saturday"
     }
 ]
