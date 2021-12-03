@@ -13,11 +13,13 @@ let delSelectEat = document.getElementById('del-select-eat');
 let delFormEat = document.getElementById('del-form-eat');
 let upSelectEat = document.getElementById('up-select-eat');
 let upFormEat = document.getElementById('up-form-eat');
+
 let newFormDrink = document.getElementById('new-drink');
 let delSelectDrink = document.getElementById('del-select-drink');
 let delFormDrink = document.getElementById('del-form-drink');
 let upSelectDrink = document.getElementById('up-select-drink');
 let upFormDrink = document.getElementById('up-form-drink');
+
 let newFormBeMerry = document.getElementById('new-beMerry');
 let delSelectBeMerry = document.getElementById('del-select-beMerry');
 let delFormBeMerry = document.getElementById('del-form-beMerry');
@@ -87,7 +89,7 @@ populateOptionsBeMerry = beMerry => {
     })
 }
 
-addEat = eat => {
+addOptionEat = eat => {
     let { index, text } = eat;
     let option = document.createElement('option');
     option.id = `d-${index}`;
@@ -98,7 +100,7 @@ addEat = eat => {
     delSelectEat.appendChild(option);
     upSelectEat.appendChild(clone);
 }
-addDrink = drink => {
+addOptionDrink = drink => {
     let { index, text } = drink;
     let option = document.createElement('option');
     option.id = `d-${index}`;
@@ -109,7 +111,7 @@ addDrink = drink => {
     delSelectDrink.appendChild(option);
     upSelectDrink.appendChild(clone);
 }
-addBeMerry = beMerry => {
+addOptionBeMerry = beMerry => {
     let { index, text } = beMerry;
     let option = document.createElement('option');
     option.id = `d-${index}`;
@@ -134,7 +136,7 @@ newEat = e => {
         addOptionEat(res.data);
     });
 
-    newForm.reset();
+    newFormEat.reset();
 }
 newDrink = e => {
     e.preventDefault();
@@ -148,7 +150,7 @@ newDrink = e => {
         addOptionDrink(res.data);
     });
 
-    newForm.reset();
+    newFormDrink.reset();
 }
 newBeMerry = e => {
     e.preventDefault();
@@ -162,7 +164,7 @@ newBeMerry = e => {
         addOptionBeMerry(res.data);
     });
 
-    newForm.reset();
+    newFormBeMerry.reset();
 }
 
 deleteEat = e => {

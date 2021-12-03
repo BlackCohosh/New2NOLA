@@ -45,11 +45,13 @@ app.get("/api/new2nola/gen", genEat);
 app.post("/api/new2nola", createEat);
 app.delete("/api/new2nola/:index", deleteEat);
 app.put("/api/new2nola/:index", updateEat);
+
 app.get("/api/new2nola", getDrink);
 app.get("/api/new2nola/gen", genDrink);
 app.post("/api/new2nola", createDrink);
 app.delete("/api/new2nola/:index", deleteDrink);
 app.put("/api/new2nola/:index", updateDrink);
+
 app.get("/api/new2nola", getBeMerry);
 app.get("/api/new2nola/gen", genBeMerry);
 app.post("/api/new2nola", createBeMerry);

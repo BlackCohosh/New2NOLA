@@ -35,33 +35,30 @@
     </div>
     <div class="flex-cont centered top-space">
         
-      <button id="eat">Receive your eat</button>
+      <button id="eat">Random Food Special</button>
     </div>
 
     <div class="flex-cont cont centered col top-space">
   
       <div style="display: none;" id="random-eat-body">
-        <!-- Random fortune appended here -->
       </div>
     </div>
     <div class="flex-cont centered top-space">
-      <button id="fortune">Receive your drink</button>
+      <button id="fortune">Random Drink Special</button>
     </div>
 
     <div class="flex-cont cont centered col top-space">
   
       <div style="display: none;" id="random-drink-body">
-        <!-- Random fortune appended here -->
       </div>
     </div>
     <div class="flex-cont centered top-space">
-      <button id="fortune">Receive your beMerry</button>
+      <button id="fortune">Random Activity Special</button>
     </div>
 
     <div class="flex-cont cont centered col top-space">
   
       <div style="display: none;" id="random-beMerry-body">
-        <!-- Random fortune appended here -->
       </div>
     </div>
 
@@ -69,44 +66,82 @@
 
     <div class="flex-cont cont centered col top-space">
       <form id="new-eat">
-        <h3 class="title">Add some eat</h3>
+        <h3 class="title">Find a new food special? Add an Eat!</h3>
   
         <input type="text" name="eat" placeholder="Enter your eat" />
-        <button type="submit">Create Eat</button>
+        <button type="submit">Submit new Eat!</button>
       </form>
   
       <div id="new-eat-body">
-        <!-- New fortune appended here -->
       </div>
     </div>
     <div class="flex-cont cont centered col top-space">
       <form id="new-drink">
-        <h3 class="title">Add some drink</h3>
+        <h3 class="title">Find a new drink special? Add an Drink!</h3>
   
         <input type="text" name="drink" placeholder="Enter your drink" />
-        <button type="submit">Create Drink</button>
+        <button type="submit">Submit new Drink</button>
       </form>
   
       <div id="new-drink-body">
-        <!-- New fortune appended here -->
       </div>
     </div>
     <div class="flex-cont cont centered col top-space">
-      <form id="new-beMerry">
-        <h3 class="title">Add some beMerry</h3>
+      <form id="new-drink">
+        <h3 class="title">Find a new activity special? Add a new way to Be Merry!</h3>
   
-        <input type="text" name="beMerry" placeholder="Enter your beMerry" />
-        <button type="submit">Create BeMerry</button>
+        <input type="text" name="beMerry" placeholder="Enter your Be Merry" />
+        <button type="submit">>Submit new Be Merry</button>
       </form>
   
       <div id="new-beMerry-body">
-        <!-- New fortune appended here -->
       </div>
     </div>
 
 
     <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If you think an eat is nonsense, choose one to delete</h3>
+        <h3 class="title">If a food special has changed, edit it here.</h3>
+        <form id="up-form-eat">
+          <select id="up-select-eat">
+          </select>
+  
+          <div>
+            <input type="text" name="update" placeholder="Change selected eat" />
+            <button type="submit">Update Eat</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="flex-cont cont centered top-space col">
+        <h3 class="title">If a drink special has changed, edit it here.</h3>
+        <form id="up-form-drink">
+          <select id="up-select-drink">
+          </select>
+  
+          <div>
+            <input type="text" name="update" placeholder="Change selected drink" />
+            <button type="submit">Update Drink</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="flex-cont cont centered top-space col">
+        <h3 class="title">If an activity special has changed, edit it here.</h3>
+        <form id="up-form-beMerry">
+          <select id="up-select-beMerry">
+          </select>
+  
+          <div>
+            <input type="text" name="update" placeholder="Change selected Be Merry" />
+            <button type="submit">Update Be Merry</button>
+          </div>
+  
+        </form>
+      </div>
+
+
+    <div class="flex-cont cont centered top-space col">
+      <h3 class="title">If a food special is no longer valid, delete it here.</h3>
       <form id="del-form-eat">
         <select id="del-select-eat">
           <!-- Fortune options populate -->
@@ -115,64 +150,19 @@
       </form>
     </div>
     <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If you think a drink is nonsense, choose one to delete</h3>
+      <h3 class="title">If a drink special is no longer valid, delete it here.</h3>
       <form id="del-form-drink">
         <select id="del-select-drink">
-          <!-- Fortune options populate -->
         </select>
         <button type="submit">Delete Drink</button>
       </form>
     </div>
     <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If you think an activity is nonsense, choose one to delete</h3>
+      <h3 class="title">If an activity special is no longer valid, delete it here.</h3>
       <form id="del-form-beMerry">
         <select id="del-select-beMerry">
-          <!-- Fortune options populate -->
         </select>
         <button type="submit">Delete Be Merry</button>
-      </form>
-    </div>
-
-    <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If you think an eat needs a change, have at it</h3>
-      <form id="up-form-eat">
-        <select id="up-select-eat">
-          <!-- Fortune options populate -->
-        </select>
-
-        <div>
-          <input type="text" name="update" placeholder="Change selected eat" />
-          <button type="submit">Update Eat</button>
-        </div>
-
-      </form>
-    </div>
-    <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If you think a drink needs a change, have at it</h3>
-      <form id="up-form-drink">
-        <select id="up-select-drink">
-          <!-- Fortune options populate -->
-        </select>
-
-        <div>
-          <input type="text" name="update" placeholder="Change selected drink" />
-          <button type="submit">Update Drink</button>
-        </div>
-
-      </form>
-    </div>
-    <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If you think a beMerry needs a change, have at it</h3>
-      <form id="up-form-beMerry">
-        <select id="up-select-beMerry">
-          <!-- Fortune options populate -->
-        </select>
-
-        <div>
-          <input type="text" name="update" placeholder="Change selected Be Merry" />
-          <button type="submit">Update Be Merry</button>
-        </div>
-
       </form>
     </div>
 

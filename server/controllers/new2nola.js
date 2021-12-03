@@ -64,7 +64,7 @@ module.exports = {
     },
     createDrink: (req, res) => {
         let text = req.body.text;
-        let newDrik = new Drink(text);
+        let newDrink = new Drink(text);
         let target = Drink.all.find(f => f.text === text);
         let index = Drink.all.indexOf(target);
         let fObj = {
