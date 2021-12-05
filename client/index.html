@@ -5,7 +5,7 @@
     <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Righteous=Play:wght@400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=NFL+&family=Play:wght@400;700&display=swap');
     </style>
   </head>
   <!-- <main>
@@ -14,7 +14,8 @@
 
 </section>
   <!-- </main> -->
-  <body background="images/nolaStreet.jfif"  bgproperties="fixed"></body>
+  <div id="bg"> 
+      <!-- <img src="../images/nolaStreet.jpeg" alt=""></div> -->
 
     <!-- <div class="flex-cont centered">
       <button id="complimentButton">Get a compliment</button>
@@ -25,7 +26,7 @@
        
     
         <div>
-            <img src="../images/new2nola.jpg" alt="logo" class="main-prof circle">
+            <!-- <img src="../images/nolaStreet.jpeg" alt="logo" class="main-prof circle"> -->
         </div>
     
     </aside>
@@ -44,7 +45,7 @@
       </div>
     </div>
     <div class="flex-cont centered top-space">
-      <button id="fortune">Random Drink Special</button>
+      <button id="drink">Random Drink Special</button>
     </div>
 
     <div class="flex-cont cont centered col top-space">
@@ -53,7 +54,7 @@
       </div>
     </div>
     <div class="flex-cont centered top-space">
-      <button id="fortune">Random Activity Special</button>
+      <button id="beMerry">Random Activity Special</button>
     </div>
 
     <div class="flex-cont cont centered col top-space">
@@ -67,33 +68,29 @@
     <div class="flex-cont cont centered col top-space">
       <form id="new-eat">
         <h3 class="title">Find a new food special? Add an Eat!</h3>
-  
         <input type="text" name="eat" placeholder="Enter your eat" />
         <button type="submit">Submit new Eat!</button>
       </form>
-  
       <div id="new-eat-body">
       </div>
     </div>
+
     <div class="flex-cont cont centered col top-space">
       <form id="new-drink">
         <h3 class="title">Find a new drink special? Add an Drink!</h3>
-  
         <input type="text" name="drink" placeholder="Enter your drink" />
         <button type="submit">Submit new Drink</button>
       </form>
-  
       <div id="new-drink-body">
       </div>
     </div>
+
     <div class="flex-cont cont centered col top-space">
-      <form id="new-drink">
+      <form id="new-beMerry">
         <h3 class="title">Find a new activity special? Add a new way to Be Merry!</h3>
-  
         <input type="text" name="beMerry" placeholder="Enter your Be Merry" />
         <button type="submit">>Submit new Be Merry</button>
       </form>
-  
       <div id="new-beMerry-body">
       </div>
     </div>
@@ -104,38 +101,34 @@
         <form id="up-form-eat">
           <select id="up-select-eat">
           </select>
-  
           <div>
             <input type="text" name="update" placeholder="Change selected eat" />
             <button type="submit">Update Eat</button>
           </div>
-  
         </form>
       </div>
+
       <div class="flex-cont cont centered top-space col">
         <h3 class="title">If a drink special has changed, edit it here.</h3>
         <form id="up-form-drink">
           <select id="up-select-drink">
           </select>
-  
           <div>
             <input type="text" name="update" placeholder="Change selected drink" />
             <button type="submit">Update Drink</button>
           </div>
-  
         </form>
       </div>
+
       <div class="flex-cont cont centered top-space col">
         <h3 class="title">If an activity special has changed, edit it here.</h3>
         <form id="up-form-beMerry">
           <select id="up-select-beMerry">
           </select>
-  
           <div>
             <input type="text" name="update" placeholder="Change selected Be Merry" />
             <button type="submit">Update Be Merry</button>
           </div>
-  
         </form>
       </div>
 
@@ -144,11 +137,11 @@
       <h3 class="title">If a food special is no longer valid, delete it here.</h3>
       <form id="del-form-eat">
         <select id="del-select-eat">
-          <!-- Fortune options populate -->
         </select>
         <button type="submit">Delete Eat</button>
       </form>
     </div>
+
     <div class="flex-cont cont centered top-space col">
       <h3 class="title">If a drink special is no longer valid, delete it here.</h3>
       <form id="del-form-drink">
@@ -157,6 +150,7 @@
         <button type="submit">Delete Drink</button>
       </form>
     </div>
+
     <div class="flex-cont cont centered top-space col">
       <h3 class="title">If an activity special is no longer valid, delete it here.</h3>
       <form id="del-form-beMerry">
