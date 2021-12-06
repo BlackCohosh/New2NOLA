@@ -67,37 +67,14 @@
 
     <div class="flex-cont cont centered col top-space">
       <form id="new-eat">
+        <h1>EAT</h1>
         <h3 class="title">Find a new food special? Add an Eat!</h3>
         <input type="text" name="eat" placeholder="Enter your eat" />
         <button type="submit">Submit new Eat!</button>
       </form>
       <div id="new-eat-body">
       </div>
-    </div>
-
-    <div class="flex-cont cont centered col top-space">
-      <form id="new-drink">
-        <h3 class="title">Find a new drink special? Add an Drink!</h3>
-        <input type="text" name="drink" placeholder="Enter your drink" />
-        <button type="submit">Submit new Drink</button>
-      </form>
-      <div id="new-drink-body">
-      </div>
-    </div>
-
-    <div class="flex-cont cont centered col top-space">
-      <form id="new-beMerry">
-        <h3 class="title">Find a new activity special? Add a new way to Be Merry!</h3>
-        <input type="text" name="beMerry" placeholder="Enter your Be Merry" />
-        <button type="submit">>Submit new Be Merry</button>
-      </form>
-      <div id="new-beMerry-body">
-      </div>
-    </div>
-
-
-    <div class="flex-cont cont centered top-space col">
-        <h3 class="title">If a food special has changed, edit it here.</h3>
+      <h3 class="title">If a food special has changed, edit it here.</h3>
         <form id="up-form-eat">
           <select id="up-select-eat">
           </select>
@@ -106,10 +83,26 @@
             <button type="submit">Update Eat</button>
           </div>
         </form>
-      </div>
+        <h3 class="title">If a food special is no longer valid, delete it here.</h3>
+        <form id="del-form-eat">
+          <select id="del-select-eat">
+          </select>
+          <button type="submit">Delete Eat</button>
+        </form>
+    </div>
 
-      <div class="flex-cont cont centered top-space col">
-        <h3 class="title">If a drink special has changed, edit it here.</h3>
+
+
+    <div class="flex-cont cont centered col top-space">
+      <h1>DRINK</h1>
+      <form id="new-drink">
+        <h3 class="title">Find a new drink special? Add an Drink!</h3>
+        <input type="text" name="drink" placeholder="Enter your drink" />
+        <button type="submit">Submit new Drink</button>
+      </form>
+      <div id="new-drink-body">
+      </div>
+      <h3 class="title">If a drink special has changed, edit it here.</h3>
         <form id="up-form-drink">
           <select id="up-select-drink">
           </select>
@@ -118,46 +111,64 @@
             <button type="submit">Update Drink</button>
           </div>
         </form>
-      </div>
-
-      <div class="flex-cont cont centered top-space col">
-        <h3 class="title">If an activity special has changed, edit it here.</h3>
-        <form id="up-form-beMerry">
-          <select id="up-select-beMerry">
+        <h3 class="title">If a drink special is no longer valid, delete it here.</h3>
+        <form id="del-form-drink">
+          <select id="del-select-drink">
           </select>
-          <div>
-            <input type="text" name="update" placeholder="Change selected Be Merry" />
-            <button type="submit">Update Be Merry</button>
-          </div>
+          <button type="submit">Delete Drink</button>
         </form>
+    </div>
+
+    <div class="flex-cont cont centered col top-space">
+      <h1>BE MERRY</h1>
+      <form id="new-beMerry">
+        <h3 class="title">Find a new activity special? Add a new way to Be Merry!</h3>
+        <input type="text" name="beMerry" placeholder="Enter your Be Merry" />
+        <button type="submit">>Submit new Be Merry</button>
+      </form>
+      <div id="new-beMerry-body">
       </div>
-
-
-    <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If a food special is no longer valid, delete it here.</h3>
-      <form id="del-form-eat">
-        <select id="del-select-eat">
+      <h3 class="title">If an activity special has changed, edit it here.</h3>
+      <form id="up-form-beMerry">
+        <select id="up-select-beMerry">
         </select>
-        <button type="submit">Delete Eat</button>
+        <div>
+          <input type="text" name="update" placeholder="Change selected Be Merry" />
+          <button type="submit">Update Be Merry</button>
+        </div>
       </form>
-    </div>
-
-    <div class="flex-cont cont centered top-space col">
-      <h3 class="title">If a drink special is no longer valid, delete it here.</h3>
-      <form id="del-form-drink">
-        <select id="del-select-drink">
-        </select>
-        <button type="submit">Delete Drink</button>
-      </form>
-    </div>
-
-    <div class="flex-cont cont centered top-space col">
       <h3 class="title">If an activity special is no longer valid, delete it here.</h3>
       <form id="del-form-beMerry">
         <select id="del-select-beMerry">
         </select>
         <button type="submit">Delete Be Merry</button>
       </form>
+    </div>
+
+
+    <div class="flex-cont cont centered top-space col">
+        
+      </div>
+
+      <div class="flex-cont cont centered top-space col">
+        
+      </div>
+
+      <div class="flex-cont cont centered top-space col">
+       
+      </div>
+
+
+    <div class="flex-cont cont centered top-space col">
+    
+    </div>
+
+    <div class="flex-cont cont centered top-space col">
+
+    </div>
+
+    <div class="flex-cont cont centered top-space col">
+    
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

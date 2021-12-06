@@ -51,6 +51,10 @@ new-eat {
 h3 {
     color: var(--gold);
 }
+h1 {
+    text-align: center;
+    color: var(--gold);
+}
 
 .wrapper {
     padding: 2% 15%;
