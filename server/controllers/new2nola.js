@@ -31,7 +31,7 @@ module.exports = {
             res.status(500).send("Error generating Drink.")
         }
     },
-    genEat: (req, res) => {
+     genEat: (req, res) => {
         if (Eat.all.length === 0) {
             eat.forEach(eat => new Eat(eat.text));
         }
