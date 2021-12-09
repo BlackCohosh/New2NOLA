@@ -1,13 +1,3 @@
-// const { deleteBeMerry, updateBeMerry } = require("../server/controllers/new2nola");
-
-// document.getElementById("complimentButton").onclick = function () {
-//     axios.get("http://localhost:4000/api/compliment/")
-//         .then(function (response) {
-//           const data = response.data;
-//           alert(data);
-//         });
-// };
-
 let newFormEat = document.getElementById('new-eat');
 let delSelectEat = document.getElementById('del-select-eat');
 let delFormEat = document.getElementById('del-form-eat');

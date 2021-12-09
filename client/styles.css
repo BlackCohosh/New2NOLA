@@ -14,32 +14,6 @@ body {
     font-family: 'Play', sans-serif;;
 }
 
-/* #bg {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
-    height: 200%;
-  }
-  #bg img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
-    min-width: 50%;
-    min-height: 50%;
-  } */
-
-/* html { 
-    background: url ("../images/nolaStreet.jpeg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } */
-
 new-eat {
     background-color: black;
 }
@@ -71,6 +45,8 @@ h1 {
 
 .col {
     flex-direction: column;
+    margin: auto;
+    width: 50%;
 }
 
 .top-space {
@@ -86,11 +62,6 @@ h3, select, input {
     font-family: 'Permanent Marker', cursive;
 }
 
-#new-fortune-body, #random-fortune-body {
-    background-color: black;
-    padding: 1%;
-}
-
 .main-prof {
     width: 10%;
     height: 10%;
@@ -103,6 +74,10 @@ h3, select, input {
     background-color: var(--black);
     border-radius: 10px;
     box-shadow: 5px 5px 25px var(--gold);
+    margin-left: auto;
+    margin-right: 10%;
+    align-items: right;
+    width: 50%;
 }
 
 input, select {
