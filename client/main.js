@@ -21,11 +21,11 @@ fetchEat = () => {
     .then(res => renderEat(res.data, "get"))
 }
 fetchDrink = () => {
-    axios.get("http://localhost:4000/api/new2nola")
+    axios.get("http://localhost:4000/api/new2nola/drink")
     .then(res => renderDrink(res.data, "get"))
 }
 fetchBeMerry = () => {
-    axios.get("http://localhost:4000/api/new2nola")
+    axios.get("http://localhost:4000/api/new2nola/beMerry")
     .then(res => renderBeMerry(res.data, "get"))
 }
 
@@ -34,11 +34,11 @@ generateEat = () => {
     .then(res => populateOptionsEat(res.data));
 }
 generateDrink = () => {
-    axios.get("http://localhost:4000/api/new2nola/gen")
+    axios.get("http://localhost:4000/api/new2nola/drink/gen")
     .then(res => populateOptionsDrink(res.data));
 }
 generateBeMerry = () => {
-    axios.get("http://localhost:4000/api/new2nola/gen")
+    axios.get("http://localhost:4000/api/new2nola/beMerry/gen")
     .then(res => populateOptionsBeMerry(res.data));
 }
 
@@ -134,7 +134,7 @@ newDrink = e => {
     let drink = {
         text: value
     }
-    axios.post('http://localhost:4000/api/new2nola', drink)
+    axios.post('http://localhost:4000/api/new2nola/drink', drink)
     .then(res => {
         renderDrink(res.data, "post");
         addOptionDrink(res.data);
@@ -148,7 +148,7 @@ newBeMerry = e => {
     let beMerry = {
         text: value
     }
-    axios.post('http://localhost:4000/api/new2nola', beMerry)
+    axios.post('http://localhost:4000/api/new2nola/beMerry', beMerry)
     .then(res => {
         renderBeMerry(res.data, "post");
         addOptionBeMerry(res.data);
@@ -166,13 +166,13 @@ deleteEat = e => {
 deleteDrink = e => {
     e.preventDefault();
     let target = e.submitter.previousElementSibling.value;
-    axios.delete(`http://localhost:4000/api/new2nola/${target}`)
+    axios.delete(`http://localhost:4000/api/new2nola/drink/${target}`)
     .then(res => removeOptionDrink(res.data));
 }
 deleteBeMerry = e => {
     e.preventDefault();
     let target = e.submitter.previousElementSibling.value;
-    axios.delete(`http://localhost:4000/api/new2nola/${target}`)
+    axios.delete(`http://localhost:4000/api/new2nola/beMerry/${target}`)
     .then(res => removeOptionBeMerry(res.data));
 }
 
@@ -197,7 +197,7 @@ updateDrink = e => {
         index: index,
         text: text
     }
-    axios.put(`http://localhost:4000/api/new2nola/${index}`, obj)
+    axios.put(`http://localhost:4000/api/new2nola/drink/${index}`, obj)
     .then(res => changeOptionsDrink(res.data));
 
     upForm.reset();
@@ -210,7 +210,7 @@ updateBeMerry = e => {
         index: index,
         text: text
     }
-    axios.put(`http://localhost:4000/api/new2nola/${index}`, obj)
+    axios.put(`http://localhost:4000/api/new2nola/beMerry/${index}`, obj)
     .then(res => changeOptionsBeMerry(res.data));
 
     upForm.reset();
